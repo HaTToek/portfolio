@@ -9,3 +9,18 @@
 <p>input type="text"로 줄여쓸수있다.</p>
 <p>'와 "를 사용가능하고 생략가능하다</p>
 
+<h2>준짱</h2>
+<ul>
+<li><em>준준짱</em></il>
+<li>준짱짱</il>
+</ul>
+<ol>
+<li>준준짱</il>
+<li>준짱짱</il>
+</ol>
+<p>리스트 형식으로 표현가능하다. ul, ol이 있고 ul은 순서없는 리스트 ol은 순서가있는 리슽트이다 em,strong은 강조</p>
+
+<dl>
+<dt>wnsWKd</dt>
+<dd>준짱은 매우 사납다</dd>
+</dl>
