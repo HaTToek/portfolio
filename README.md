@@ -44,9 +44,16 @@ input type="text"로 줄여쓸수있다.<br>
 </tbody>
 <tfoot>
 <tr>
-<td colspan="3">영</td>     <td>갓</td>    <td>준</td>
+<td>영</td>     <td>갓</td>    <td>준</td>
 </tr>
 </tfoot>
 </table>
+<form action="">
+<p>text:<input type ="text" name="id" value="default value"></p>
+<p>test:<textarea cols="50" rows="2">default value</textarea></p>
+</form>
+
+
+
 </body>
 </html>
