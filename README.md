@@ -10,9 +10,9 @@
 <p> href와 title, target은 a로 묵이며 href는 웹주소와 연결 title은 정보 target은 링크가 현제 탭에서 열릴지 새탭에서 열릴지 말해준다 현제 탭은 생략</p>
 <input type="text" disabled="disabled">
 <p>input type="text" disabled="disabled"</p>
-<p>input type ="text" disabled</p>
-<p>input type="text"로 줄여쓸수있다.</p>
-<p>'와 "를 사용가능하고 생략가능하다</p>
+<p>input type ="text" disabled<br>
+input type="text"로 줄여쓸수있다.<br>
+'와 "를 사용가능하고 생략가능하다</p>
 
 <h2>준짱</h2>
 <ul>
@@ -29,5 +29,24 @@
 <dt>wnsWKd</dt>
 <dd>준짱<sup>준짱</sup>은 매우 사납다</dd>
 </dl>
+
+
+<table border="2">
+<thead>
+<tr>
+<th>갓</th>     <th>준</th>    <th>영</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>준</td>     <td>영</td>    <td>갓</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="3">영</td>     <td>갓</td>    <td>준</td>
+</tr>
+</tfoot>
+</table>
 </body>
 </html>
