@@ -29,26 +29,27 @@ input type="text"로 줄여쓸수있다.<br>
 <dt>wnsWKd</dt>
 <dd>준짱<sup>준짱</sup>은 매우 사납다</dd>
 </dl>
-
-<select name="color">
-<table border="2">
-<thead>
-<tr>
-<th><option value="red">갓</option></th>  <th><option value="blue">준</option</th>  <th><option value="black">영</option></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><option value="blue">준</option></td><td><option value="black">영</option></td><td><option value="red">갓</option></td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-<td><option value="black">영</option></td> <td><option value="red">갓</option></td> <td><option value="blue">준</option></td>
-</tr>
-</tfoot>
-</table>
-</select>
+<form action="http://localhost/color.php">
+    <select name="color">
+        <table border="2">
+            <thead>
+                <tr>
+                    <th><option value="red">갓</option></th>  <th><option value="blue">준</option</th>  <th><option value="black">영</option></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><option value="blue">준</option></td><td><option value="black">영</option></td><td><option value="red">갓</option></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><option value="black">영</option></td> <td><option value="red">갓</option></td> <td><option value="blue">준</option></td>
+                </tr>
+            </tfoot>
+        </table>
+    </select>
+</form>
 <form action="">
 <p>text:<input type ="text" name="id" value="default value"></p>
 <p>test:<textarea cols="50" rows="2">default value</textarea></p>
