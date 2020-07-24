@@ -30,24 +30,25 @@ input type="text"로 줄여쓸수있다.<br>
 <dd>준짱<sup>준짱</sup>은 매우 사납다</dd>
 </dl>
 
-
+<select name="color">
 <table border="2">
 <thead>
 <tr>
-<th>갓</th>     <th>준</th>    <th>영</th>
+<th><option value="red">갓</option></th>  <th><option value="blue">준</option</th>  <th><option value="black">영</option></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>준</td>     <td>영</td>    <td>갓</td>
+<td><option value="blue">준</option></td><td><option value="black">영</option></td><td><option value="red">갓</option></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td>영</td>     <td>갓</td>    <td>준</td>
+<td><option value="black">영</option></td> <td><option value="red">갓</option></td> <td><option value="blue">준</option></td>
 </tr>
 </tfoot>
 </table>
+</select>
 <form action="">
 <p>text:<input type ="text" name="id" value="default value"></p>
 <p>test:<textarea cols="50" rows="2">default value</textarea></p>
