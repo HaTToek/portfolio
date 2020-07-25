@@ -14,7 +14,7 @@
 input type="text"로 줄여쓸수있다.<br>
 '와 "를 사용가능하고 생략가능하다</p>
 
-<h2>준짱</h2>
+<h1>준짱</h1>
 <ul>
 <li><em>준준짱</em></il>
 <li>준짱짱</il>
@@ -94,8 +94,6 @@ input type="text"로 줄여쓸수있다.<br>
     <input type="hidden" name="hide" value="egoing">
     <input type="submit">
 </form>
-
-
 
 </body>
 </html>
