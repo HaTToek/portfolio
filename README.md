@@ -57,6 +57,32 @@ input type="text"로 줄여쓸수있다.<br>
 <p>test:<textarea cols="50" rows="2">default value</textarea></p>
 </form>
 
+<form action="http://localhost/order.php">
+    <h1>준상</h1>
+        <select name="준짱">
+            <option value="1">준준짱</option>
+            <option value="2">준짱짱</option>
+        </select>
+    <h1>준상2</h1>
+        <select name="준상2" multiple>
+            <option value="3">준준상</option>
+            <option value="4">준상상</option>
+        </select>
+    <input type="submit">
+    <p>
+        <h1>준상3(딴일 선택)</h1>
+        비제이 : <input type="radio" name="work" value="bj">
+        유튜버 : <input type="radio" name="work" value="youtuber" checked>
+    </p>
+    <p>
+        <h1>준이즈(나중선택)<h1>
+            회사원 : <input type="checkbox" name="later select" value="worker">
+            사업가 : <input type="checkbox" name="later select" value="..." checked>
+    </p>
+    <input type="submit">
+</form>
+        
+
 
 
 </body>
