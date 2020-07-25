@@ -75,13 +75,25 @@ input type="text"로 줄여쓸수있다.<br>
         유튜버 : <input type="radio" name="work" value="youtuber" checked>
     </p>
     <p>
-        <h1>준이즈(나중선택)<h1>
+        <h1>준이즈(나중선택)</h1>
             회사원 : <input type="checkbox" name="later select" value="worker">
             사업가 : <input type="checkbox" name="later select" value="..." checked>
     </p>
     <input type="submit">
 </form>
-        
+         <form action="http://localhost/form.php">
+            <input type="text">
+            <input type="submit" value="전송">
+            <input type="button" value="버튼" onclick="alert('hello world')">
+            <input type="reset">
+        </form>
+
+
+<form action="http://localhost/hidden.php">
+    <input type="text" name="id">
+    <input type="hidden" name="hide" value="egoing">
+    <input type="submit">
+</form>
 
 
 
