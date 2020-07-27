@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>
+            <strong>준짱의 코딩수업</strong>
+        </title>
+        <meta charset="uft-8">
+    </head>
+    <body>
+        <header>
+            <h2><a href="text2.html">HTML내용정리</a></h2>
+        </header>
+       <nav>
+            <ol>
+                <li><a href="text3.html">기본문법</a></li>
+                <li><a href="text4.html">테이블</a></li>
+                <li><a href="text5.html">선택&버튼&데이터 전송&폰트</a></li>
+                <li><a href="text6.html">메타테그</a></li>
+            </ol>
+        </nav>
+
+        <h2>선택&버튼&데이터 전송&폰트</h2>
+        <p>
+            사용자가 입력한 정보를 서버로 전송하기<br>
+            &lt;form&gt;태그 생성 전체 감싸기<br>
+            속성 action="form을 전송할 php서버?어플리케이션?"<br>
+            &lt;form&gt;태그 안 형식 &lt;input태그&gt; 닫히는태그 존재X<br>
+            속성 type(형식)= text또는 password 또는 submit<br>
+            속성 name(고유이름)=id, pwd, adress<br>
+            제출 버튼입력 &lt;input type="submit"&gt;<br>
+            <br>
+            
+            &lt;input type="속성" name="속성 이름" value="속성에 기본적으로 나타나는 값"><br>
+            &lt;textarea row="숫자" cols="숫자">&lt;/textarea><br>
+            textarea : 입력창<br>
+            row = 횡만큼 증가 cols = 열만큼 증가<br>
+            <br>
+            
+            &lt;select name="">&lt;/select>로 묶어준다(단일선택)<br>
+            &lt;select name=""multiple>&lt;/select>로 묶어준다(다중선택)<br>
+            &lt;option value="값">&lt;/option>으로 묶어준다.<br>
+            2가지 방법 <br>
+            &lt;input type="radio" name="" value="전달값"> : 동그란 선택창<br>
+            &lt;input type="checkbox" name="" value="전달값"> : 네모난 선택창 v표시<br>
+            <br>
+            submit : form 태그안에 있는 내용들을 전송<br>
+            button : JS과 함께할때 의미있음<br>
+            reset : input 박스안에 사용자가 적은 내용 리셋<br>
+            <br>
+            
+            
+            &lt;label>은 폼태그의 이름을 지정하는 태그<br>
+            방법 두가지 1. label for=""와 이름을 지정하려는 태그 input id=""를 같은 값으로 묶어준다.<br>
+            2. 이름을 지정하려는 input태그를 label태그로 감싸준다.<br>
+            
+            -> 이렇게 하면 label, input에 해당하는 UI 중 아무거나 클릭해도 해당 필드에 포커스가 이동한다.<br>
+            => label태그 자체로의 기능은 없지만 제목을 부여함으로써 가독성 및 정보로서의 가치를 높여주고 사용성도 약간은 증대된다.<br>
+            
+            
+            
+            <br>
+            form 방식을 통해 데이터를 전송할때<br>
+            
+            get : 사용자가 입력한 정보가 url에 그대로 노출 된다<br>
+            post : 사용자가 입력한 정보가 url에 나타나지 않는다.<br>
+            
+            get방식이냐 post 방식이냐는 서버 엔지니어의 권한.<br>
+            어지간하면 post방식으로 작성하면 된다.<br>
+            
+            
+            1. 파일 전송 &lt;form>태그에서 method="post" enctype="multipart/form-data" 속성값을 추가해줄 것.<br>
+            2. 또한 &lt;input type="file"> 태그에서 name 속성값을 지정해줄 것.<br>
+            단만 위의 두 가지는 엄밀히 따지면 서버 개발자의 몫 혹은 이렇게 적용해달라 요청을 할 수도있다.<br>
+            
+            <br>
+            
+            &lt;font> 태그는 문서 내의 TEXT를 시각적으로 꾸며주는 역할을 담당하며<br>
+            size / color 등의 여러 속성들을 적용할 수 있다.<br>
+            (size 속성값은 기본이 3이며 1~7까지의 값을 표현해낼 수 있다.)<br>
+            
+            단, &lt;font> 태그는 디자인의 역할만 할 뿐 어떠한 정보로서의 의미도 갖지 않으며,<br>
+            중복 사용으로 인한 파일 용량 증가, 가독성 저하, 관리 측면에서의 불편함 등의 이유로<br>
+            현재는 퇴출된 태그이며 그 역할을 CSS가 담당하게 되었다.<br>
+            
+            
+            
+        </p>
+          
+    </body>
+</html>
