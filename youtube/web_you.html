@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube</title>
+        <meta charset="uft-8">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <style>
+            html{
+                overflow: hidden;
+            }
+            body{
+                margin:0;
+                display:flex;
+                
+            }
+            header{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                position: fixed;
+                padding:0 16px;
+                width:100%;
+                border:0px solid black;
+                background-color: white;
+            }
+            input{
+                width:100%;
+                height:100%;
+                display:flex;
+                flex-grow :1;
+            }
+            #top_left{
+                display:flex;
+                flex-direction: row ;
+                flex-grow: 1;
+            }
+            .list_top{
+                margin:0 16px 0 0;
+                padding:16px;
+                font-size: 24px;
+            }
+            #top_right{
+                margin-right:32px;
+                display:flex;
+                flex-grow: 1;
+                flex-direction: row;
+                right:0;
+                justify-content: flex-end;
+            }
+            .top_you{
+                display:flex;
+                flex-direction: row;
+                
+                align-items: center;
+            }
+            #top_mid{
+                margin:0 40px 0 40px;
+                padding:0 4px;
+                display:flex;
+                flex-direction: row;
+                display:flex;
+                flex-grow: 2;
+                flex-shrink: 1;
+                
+            }
+            #tsearch{
+                border:1px solid black;
+                width:65px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .main_menu{
+                margin:0 24px;
+                display:flex;
+                align-items: center;
+                width: 240px;
+                height:40px;
+            }
+            .menu_icon{
+                margin:0 24px;
+            }
+            nav{
+                overflow-y:auto ;
+                display:flex;
+                height:auto;
+                flex-shrink: 0;
+
+            }
+            #left_menu{
+                display:flex;
+                flex-direction: column;
+                margin-top: 56px;
+                height:888px;
+                background-color: white;
+            }
+            .mmenu{
+                border-top:1px solid gray;
+                margin-top: 12px;
+                padding-top: 12px;
+            }
+
+
+            section{
+                width: 80%;
+                overflow-y:auto;
+            }
+            #scr{
+                
+                height: 888px;
+                display:flex;
+                flex-shrink: 8;
+                margin-top: 56px;
+            }
+            #main{
+                display:flex;
+                margin:16px;
+            }
+        </style>
+    </head>
+    <body >
+        <header>
+            <div id='top_left' >
+                <i class="list_top fas fa-bars"></i>
+            
+                <div class="top_you">
+                <i style="color:red" class="fab fa-youtube"></i>
+                <div>YouTube<sup>KR</sup></div>
+                </div>
+            </div>
+            <div id="top_mid">
+                <input id="insear" type="search" name='검색' value="검색">
+                <div id='tsearch'><i class="fas fa-search"></i></div>
+            </div>
+            <div id='top_right'>
+                <div>
+                    <i style='padding:16px;' class="fas fa-video"></i>
+                    <i style='padding:16px;' class="fas fa-grip-horizontal"></i>
+                    <i style='padding:16px;' class="fas fa-bell"></i>
+                    <i style='padding:16px;' class="fas fa-compass"></i>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div id='left_menu'>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fab fa-youtube"></i>
+                        <div>홈</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>보관함</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>시청 기록</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>내 동영상</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>나중에 볼 동영상</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>좋아요 표시한 동영상</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>관련 재생목록</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <div>구독</div>
+                    </div>
+                    
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>스터디</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>박준영</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>김호성</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>임치헌</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>지상근</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>김민지</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <div>YOUTUBE 더보기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>YouTube Premium</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>영화</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>게임</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>실시간</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>학습</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>설정</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>신고 기록</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>고객센터</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>의견 보내기</div>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        
+        <section>
+            <div id='scr'>
+                <div id='main'>
+                   <div>맞춤동영상</div>
+                   <div id='video'>
+                    <div>1111</div>
+                    <div>2222</div>
+                    <div>3333</div>
+                    </div>
+                   <div id='video'>
+                    <div>1111</div>
+                    <div>2222</div>
+                    <div>3333</div>
+                    </div>
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                    dddddddddddddddddddddsasnmkdnaskdnasdddddddddddddddddddddddddd
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

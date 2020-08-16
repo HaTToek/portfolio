@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube</title>
+        <meta charset="uft-8">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width">
+        <style>
+            html{
+                overflow: hidden;
+            }
+            body{
+                margin:0;
+                display:flex;
+                
+            }
+            header{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                position: fixed;
+                padding:0 16px;
+                width:100%;
+                border:0px solid black;
+                /*background-color: white;*/
+            }
+            input{
+                width:100%;
+                height:100%;
+                display:flex;
+                flex-grow :1;
+            }
+            #top_left{
+                display:flex;
+                flex-direction: row ;
+                flex-grow: 1;
+            }
+            .list_top{
+                margin:0 16px 0 0;
+                padding:16px;
+                font-size: 24px;
+            }
+            #top_right{
+                margin-right:32px;
+                display:flex;
+                flex-grow: 1;
+                flex-direction: row;
+                right:0;
+                justify-content: flex-end;
+            }
+            .top_you{
+                display:flex;
+                flex-direction: row;
+                
+                align-items: center;
+            }
+            #top_mid{
+                margin:0 40px 0 40px;
+                padding:0 4px;
+                display:flex;
+                flex-direction: row;
+                display:flex;
+                flex-grow: 2;
+                flex-shrink: 1;
+                
+            }
+            #tsearch{
+                border:1px solid black;
+                width:65px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .main_menu{
+                margin:0 24px;
+                display:flex;
+                align-items: center;
+                width: 240px;
+                height:40px;
+            }
+            .menu_icon{
+                margin:0 24px;
+            }
+            nav{
+                overflow:scroll ;
+                display:flex;
+                height:auto;
+
+            }
+            #left_menu{
+                display:flex;
+                flex-direction: column;
+                margin-top: 56px;
+                height:888px;
+                background-color: white;
+            }
+            section{
+                width: 20%;
+                overflow-y:scroll;
+            }
+        </style>
+    </head>
+    <body >
+        <header>
+            <div id='top_left' >
+                <i class="list_top fas fa-bars"></i>
+            
+                <div class="top_you">
+                <i style="color:red" class="fab fa-youtube"></i>
+                <div>YouTube<sup>KR</sup></div>
+                </div>
+            </div>
+            <div id="top_mid">
+                <input id="insear" type="search" name='검색' value="검색">
+                <div id='tsearch'><i class="fas fa-search"></i></div>
+            </div>
+            <div id='top_right'>
+                <div>
+                    <i style='padding:16px;' class="fas fa-video"></i>
+                    <i style='padding:16px;' class="fas fa-grip-horizontal"></i>
+                    <i style='padding:16px;' class="fas fa-bell"></i>
+                    <i style='padding:16px;' class="fas fa-compass"></i>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id='left_menu'>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div>
+                <div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div><div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div><div class='mmenu'>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-home"></i>
+                        <div>홈</div>
+                    </div>
+                    <div class='main_menu'>
+                        <i class="menu_icon fas fa-burn"></i>
+                        <div>인기</div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+       
+    </body>
+</html>
