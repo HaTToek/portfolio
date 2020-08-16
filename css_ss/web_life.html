@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>생활코딩</title>
+    <meta charset="uft-8">
+    <link rel="stylesheet" href="C:\Users\wjsgh\Desktop\스터디\study\css\bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body{
+            
+        margin:0;
+        }
+      #topbar{
+        width:100%;
+        font-size: small;
+      }
+      #midbar{
+          display:flex;
+          flex-direction: column;
+          padding-top:25px;
+          font-size: small;
+      }
+      .botbar{
+          padding:10px 15px ;
+      }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+     
+    }
+    .menu{
+        margin:14.4px;
+        background-color:  rgb(77, 108, 139);
+        color:#DDDDDD;
+        border:0;
+        outline: 0;
+    }
+    .container{
+        background-color: white;
+    }
+    .nav-scroller,.navbar,.align-self-center{
+        background-color: rgb(77, 108, 139);
+        
+        color:#ccc;
+    }
+    #jun{
+        background-color: #eee;
+        border-bottom: 1px solid #ddd;
+        height:40px;
+        color:#999999;
+        padding:0 130px;
+    }
+    .body{
+        border:10px solid black;
+    }
+    .container-sm{
+        
+        padding:40px 105px;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+      </style>
+</head>
+<body>  
+    <nav class="navbar navbar-expand-lg" >
+        <div class='p-2 d-flex flex-row' id='topbar'>
+            <div class=''>
+                <a style="color: #2ecc71;" href="https://opentutorials.org/">Open</a>tutorials.org
+                <i class="p-2 fas fa-list"></i>
+            </div>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarResponsive">
+                <ul class="navbar-nav d-flex flex-row ">
+                    <li><a class="nav-link" style="color:#ccc" 
+                         href="https://opentutorials.org/module/1588/12591">후원</a></li>
+                    <li ><a class="nav-link" style="color:#ccc"
+                        href="https://opentutorials.org/auth?mode=login&returnURL=course/1">로그인</a></li>
+                    <li ><a class="nav-link" style="color:#ccc"
+                        href="https://opentutorials.org/module/180">도움말</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <div class='align-self-center'>
+        <div class='d-flex justify-content-center'>
+            <div id='midbar'>
+                <div style="color:white;  font-size: x-large">생활코딩</div>
+                <div>Coding Everybody</div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-scroller py-1 ">
+        <nav class="nav d-flex justify-content-center" id="botbar">
+          
+          <div class="dropdown">
+            <button class="menu">
+              WEB
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://opentutorials.org/course/3084">WEB1-HTML&Internet</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3086">WEB2-CSS</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3085">WEB2-javaScript</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3281">- Ajax</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3423">- Facebook Login</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3424">- Google Logon</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="menu">
+              DATABASE
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://opentutorials.org/course/3162">DATABASE1</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3884">SQL Join</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3883">관계형 데이터 모델링</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3161">DATABSE2 - MySQL</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3410">DATABASE2 - lowdb</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3885">Oracle</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="menu">
+              언어
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://opentutorials.org/course/3930">JAVA1</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3975">- JAVA - 제어문</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/4074">- JAVA - method</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/4074">- JAVA 객체 지향 프로그래밍</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/4408">- JAVA 상속</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/1223">Java</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="menu">
+              클라이언트
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://opentutorials.org/course/3930">JAVA1</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3975">- JAVA - 제어문</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/4074">- JAVA - method</a>
+                <a class="dropdown-item" href="#">- JAVA 객체 지향 프로그래밍</a>
+                <a class="dropdown-item" href="#">- JAVA 상속</a>
+                <a class="dropdown-item" href="#">Java</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="menu">
+              서버
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://opentutorials.org/course/3930">JAVA1</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3975">- JAVA - 제어문</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/4074">- JAVA - method</a>
+                <a class="dropdown-item" href="#">- JAVA 객체 지향 프로그래밍</a>
+                <a class="dropdown-item" href="#">- JAVA 상속</a>
+                <a class="dropdown-item" href="#">Java</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="menu">
+              데이터 과학
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://opentutorials.org/course/3930">JAVA1</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3975">- JAVA - 제어문</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/4074">- JAVA - method</a>
+                <a class="dropdown-item" href="#">- JAVA 객체 지향 프로그래밍</a>
+                <a class="dropdown-item" href="#">- JAVA 상속</a>
+                <a class="dropdown-item" href="#">Java</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="menu">
+              개발도구
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://opentutorials.org/course/3930">JAVA1</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3975">- JAVA - 제어문</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/4074">- JAVA - method</a>
+                <a class="dropdown-item" href="#">- JAVA 객체 지향 프로그래밍</a>
+                <a class="dropdown-item" href="#">- JAVA 상속</a>
+                <a class="dropdown-item" href="#">Java</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="menu">
+              프로젝트 관리
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://opentutorials.org/course/3930">JAVA1</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3975">- JAVA - 제어문</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/4074">- JAVA - method</a>
+                <a class="dropdown-item" href="#">- JAVA 객체 지향 프로그래밍</a>
+                <a class="dropdown-item" href="#">- JAVA 상속</a>
+                <a class="dropdown-item" href="#">Java</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="menu">
+              기타
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://opentutorials.org/course/3930">JAVA1</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/3975">- JAVA - 제어문</a>
+                <a class="dropdown-item" href="https://opentutorials.org/course/4074">- JAVA - method</a>
+                <a class="dropdown-item" href="#">- JAVA 객체 지향 프로그래밍</a>
+                <a class="dropdown-item" href="#">- JAVA 상속</a>
+                <a class="dropdown-item" href="#">Java</a>
+            </div>
+          </div>
+        </nav>
+    </div>
+   
+    <div class=' bg-light py-2'>
+        <div class='container bg-light text-secondary' style='font-size: 12px;'>
+            생활코딩
+        </div>
+    </div>
+    <div class='container-sm'>
+        <div id="body"class='d-flex justify-content-center' >
+			<div id="cols">
+				<div class="wrapper">
+					<div class="entry-area">
+						<article class="hentry">
+							<hgroup>
+								<div class="props">
+								</div>
+							</hgroup>
+
+						<div id="content" class="entry-content">
+							<p>&nbsp;</p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="150" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5641.png" width="150" class="thumbnail"></p>
+
+<p style="text-align: center;">hello world</p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p>생활코딩의 세계에 오신 것을 환영합니다. 생활코딩은 <strong>일반인들에게 프로그래밍을 알려주는 무료 온라인, 오프라인 수업입니다. </strong>&nbsp;어떻게 공부할 것인가를 생각해보기 전에 왜&nbsp;프로그래밍을 공부하는 이유에 대한 이유를 함께 생각해보면 좋을 것 같습니다. 아래 영상을 한번 보시죠.</p>
+
+<p>&nbsp;</p>
+
+<div class="movie"><iframe allowfullscreen="" frameborder="0" height="360" src="//www.youtube.com/embed/1ttLx9MbrCI" width="640"></iframe><input style="position:absolute;margin-left:5px;width:1.5rem;opacity: 0.1;filter: alpha(opacity=10);" class="split" type="image" src="/static/img/desktop/noun_1102024.png" value="split" title="새창으로 열기" onmouseover="this.style.opacity='1'" onmouseleave="this.style.opacity='0.1'"></div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2>온라인 강의 소개</h2>
+
+<p>입문자의 가장 큰 고충은 '무엇을 모르는지 모르는 상태'일 겁니다. 온라인에는 프로그래밍을 익히는 데 필요한 거의 모든 정보가 있지만, 이 지식들은 게시판이나 블로그 또는 커뮤니티에 포스팅 단위로 파편화되어 있습니다. 그래서 최소한 무엇을 검색해야 하는지를 아는 사람들을 위해서는 더 없이 좋은 공간이지만, '무엇을 모르는지 모르는 상태'의 입문자에게는 그림의 떡으로 남아 있습니다. 다시말해서 전문가를 더욱 전문가답게 만드는 혁신에 머물고 있는 것이죠.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="150" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5636.png" width="150" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>생활코딩은 컴퓨터와 인터넷이 존재하는 시대의 공부방법은 어때야 하는가를 찾는 작업을 꾸준히 하고 있습니다. 정보기술이 발전하지 않았던, 낭만적인 시절에는 어떤 일을 하려고 하면 그것을 하기 위해서 필요한 거의 모든 것을 알고 있어야 했습니다. 검색할수도 없었고, 질문하기도 어려웠기 때문입니다. 한편 한번 배운 지식만으로도 평생을 살아 갈 수 있었습니다. &nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="120" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5637.png" width="120" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>오늘날은 인터넷이 연결된 환경에서 일을 합니다. 언제든지 검색하고, 질문할 수 있습니다. 또 많은 일을 기계가 대신해줍니다. 이런 시대의 공부방법은 과거와 달라져야 한다고 생각합니다. &nbsp;생활코딩이 지향하는 목표는 작은 교육입니다. 작은교육의 핵심은 '무엇을 모르는지 모르는 상태'에서 '무엇을 모르는지는 아는 상태'가 되는 것입니다. 무엇을 모르는지를&nbsp;알면, 지금 당장 그 지식을 익히지는 않더라도, 그 지식이 정말 필요할 때 그 지식을 구하려 할 것입니다. 이 때 하는 공부는 이전과 같지 않을 것입니다.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="150" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5642.png" width="150" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2>수업소개</h2>
+
+<p>생활코딩 주력 수업인 <a href="https://opentutorials.org/course/3083" target="_blank">WEBn</a>은 프로그래밍이 처음인 분들을 위해서 고안된 수업입니다. WEBn을 통해서 교양으로 코딩을 공부하려는 분들에게는&nbsp;출구를, 직업으로 코딩을 공부하려는 분들에게는 입구를 제공해드리려고 노력하고 있습니다. 웹이라는 구체적인 사례를 통해서 코딩이 무엇인가 파악해보세요. 또 코딩을 통해서 웹을 만드는 방법을 공부해보세요.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>아래 수업은 생활코딩 수업들 간의 의존관계를 나타내고 있는 지도입니다. 이 지도를 통해서 심화과정을 스스로 탐구 할 수 있습니다. 각각의 수업에 방문해서 소개 영상부터 구경해보세요.&nbsp;</p>
+
+<div class="movie"><iframe frameborder="0" height="600" scrolling="no" src="https://seomal.org?i=WEB1" width="100%"></iframe><input style="position:absolute;margin-left:5px;width:1.5rem;opacity: 0.1;filter: alpha(opacity=10);" class="split" type="image" src="/static/img/desktop/noun_1102024.png" value="split" title="새창으로 열기" onmouseover="this.style.opacity='1'" onmouseleave="this.style.opacity='0.1'"></div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2>생활코딩 Youtube 채널</h2>
+
+<p>생활코딩의 모든 동영상 강의는 Youtube를 통해서 서비스 되고 있습니다. Youtube 채널을 구독하시면 생활코딩의 새로운 동영상을 받아보실 수 있습니다.</p>
+
+<p><a href="http://www.youtube.com/user/egoing2" target="_blank">http://www.youtube.com/user/egoing2</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="150" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5644.png" width="150" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>질문</h3>
+
+<p>각각의 수업의 하단에는 댓글이 있습니다. 이 댓글을 통해서 질문을 받습니다. 댓글을 달면&nbsp;운영자에게 이메일이 발송되기 때문에 질문은 모두 운영자에게 열람이 됩니다. 하지만 많은 양의 질문을 받기 때문에 운영자 입장에서는 큰 부담이 되는 것도 사실입니다. 운영자가 답장을 하지 않는 것은 운영자도 잘 모르는 문제이거나 지금은 답변하기 어려운 것일 수 있습니다. 꼭 운영자를 통해서 문제를 해결해야 하는 것은 아니기 때문에 우선은 검색이나 커뮤니티에 질문하는 것을 통해서 문제를 해결하셨으면 좋겠습니다. 물론 운영자에게 질문하시는 것을 주저하실 필요는 없습니다. 답변할 수 있는 것은 최대한 신속하게 도움을 드립니다. 그리고 질문은 최대한 상세하게 해주세요.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="150" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5645.png" width="150" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2>공동공부</h2>
+
+<p>공동공부는 온라인의 편리한 접근성에 오프라인의 함께하는 느낌을 하이브리드한 공부방식입니다.공동공부를 통해서 덜 외롭게 공부할 수 있습니다. 다음 링크는 공동공부에 참여하는 방법입니다.&nbsp;<a href="https://www.youtube.com/watch?v=1YZSqRZ_1rg" target="_blank">https://www.youtube.com/watch?v=1YZSqRZ_1rg</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="150" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5646.png" width="150" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2>커뮤니티</h2>
+
+<h3>생활코딩 페이스북 그룹</h3>
+
+<p>생활코딩 페이스북 그룹은 프로그래밍을 하고 싶은 일반인과 일반인을 만나고 싶은 프로그래머들이 드물게 조우하는 커뮤니티 입니다.이곳에서 사람사는 잡담도 하고, 기술적인 질답도 하고, 서로의 입장도 바꿔보는 훈훈한 커뮤니티입니다.&nbsp;<span style="font-size: 13.600000381469727px; line-height: 1.8;">그 지식을 기반으로 하는 사람들의 사회를 이해하는 것은 그 지식을 이해하는 것만큼 중요할 뿐 아니라, 지식을 넘어서 지혜를 구하는데 가장 좋은 방법입니다.</span></p>
+
+<p><a href="http://goo.gl/BjjSh" style="font-size: 13.600000381469727px; line-height: 1.8;" target="_blank">http://goo.gl/BjjSh</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="120" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5647.png" width="120" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>생활코딩 페이스북 페이지</h3>
+
+<p>생활코딩 페이스북 페이지에서 좋아요를 누르시면 새로운 강의가 등록될 때 알려드립니다. 정보 기술과 관련한 다양한 소식도 알려드립니다.&nbsp;</p>
+
+<p><a href="http://goo.gl/xsdUW" target="_blank">http://goo.gl/xsdUW</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="110" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5648.png" width="110" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2>강의 소식 메일링 리스트</h2>
+
+<p>생활코딩에서는 비정기적으로 오프라인 수업을 합니다. 아래 양식에 연락처를 적어주시면 수업이 있을 때 알려드립니다.&nbsp;</p>
+
+<p><a href="https://page.stibee.com/subscriptions/8851" target="_blank"><span style="font-size: 10.89px;">https://page.stibee.com/subscriptions/8851</span></a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="150" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5649.png" width="150" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2>라이선스</h2>
+
+<p>생활코딩은 오픈소스를 지지합니다. 그 연장 선상에서 생활코딩의 모든 컨텐츠는 오픈된 컨텐츠 라이선스인 CCL를 따릅니다. 이 말은&nbsp;생활코딩의 컨텐츠를 이용해서 영리활동을 하셔도 되고, 블로그나 홈페이지에 담아가셔도 됩니다. 또한 생활코딩을 사용하는 컨텐츠가 CCL 라이선스를 따라야 하는 것도 아닙니다.&nbsp;<u>다만, 영리를 목적으로 하는 경우에는 영리 활동이 생활코딩과의 제휴관계가 아니라 CCL 라이선스에 따른 사용관계라는 것을 사용자가 충분히 인지 가능한 형태로 명시해주셔야 합니다.</u>&nbsp;생활코딩의 라이선스 규정은 <a href="http://creativecommons.org/licenses/by/2.0/kr/">Creative Commons 저작자 표시 2.0 문서</a>를 참고해주세요. 생활코딩 기반으로 출판 계획이 있다면 다음 링크를 참조해주세요. <a href="https://docs.google.com/spreadsheets/d/1RFcP0b4CQWNAAV0u6fRQH2hZdpPTmrln9u-7zuiy7WA/edit#gid=0" target="_blank">생활코딩 출판현황</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" height="150" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5650.png" width="150" class="thumbnail"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2>나만의 코스 만들기</h2>
+
+<p>생활코딩의 홈페이지인 opentutorials.org는 생활코딩과 같은 활동을 하고자 하는 분들이 그렇게 할 수 있도록 돕기 위한 비영리 플랫폼입니다. 생활코딩의 컨텐츠들을 재조립해서 생활코딩과 같은 새로운 코스를 만들 수 있습니다. 자세한 내용은 아래 동영상을 참고해주세요. 자세한 내용은 <a href="http://opentutorials.org/module/180/5590" target="_blank">opentutorials.org에서 컨텐츠 만들기 토픽</a>을 참고해주세요.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2>생활코딩을 돕는 법</h2>
+
+<ol>
+	<li>생활코딩이 있는 이유는 관객이 있기 때문입니다. 생활코딩의 관객이 되어주신 것으로도 충분한 도움이 되고 있습니다.</li>
+	<li>생활코딩의 운영자 egoing은 기업이나 단체를&nbsp;위한 교육과 컨설팅을 하고 있습니다. 참여자에게 비용을 받는 행사에는 참여하지 않고 있습니다.&nbsp;문의 사항은&nbsp;egoing@gmail.com으로 연락 부탁드립니다.&nbsp; 강의 경력은 <a href="https://docs.google.com/spreadsheets/d/1CwlHX-Dgw2y2Xaawkk8zTnwc2epcEcDnR0fslQmOkWI/edit?usp=sharing" target="_blank">생활코딩 오프라인 수업의 역사</a>를 참고해주세요</li>
+	<li>질문은 이메일을 이용하는 것 보다는&nbsp;댓글이나 커뮤니티와 같이 공개된 방법을 이용해주시면 좋겠습니다.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div class="movie"><iframe allowfullscreen="" frameborder="0" height="360" src="https://www.youtube.com/embed/JuD76a1wQwo" width="640"></iframe><input style="position:absolute;margin-left:5px;width:1.5rem;opacity: 0.1;filter: alpha(opacity=10);" class="split" type="image" src="/static/img/desktop/noun_1102024.png" value="split" title="새창으로 열기" onmouseover="this.style.opacity='1'" onmouseleave="this.style.opacity='0.1'"></div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/course/94.png" style="font-size: 12px; margin-top: 100px; margin-bottom: 100px; width: 200px; height: 215px;"></p>
+
+<p>&nbsp;</p>
+						</div>
+						</article>
+					<div id="social_group">
+						<ul>
+							<li id="facebook_like"><div class="fb-like fb_iframe_widget" data-send="true" data-layout="button_count" data-width="450" data-height="20" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;height=20&amp;href=https%3A%2F%2Fopentutorials.org%2Fcourse%2F1&amp;layout=button_count&amp;locale=ko_KR&amp;sdk=joey&amp;send=true&amp;show_faces=false&amp;width=450"><span style="vertical-align: bottom; width: 177px; height: 20px;"><iframe name="f36e5f3d4c04478" width="450px" height="20px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/plugins/like.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dff78817c9dde3c%26domain%3Dopentutorials.org%26origin%3Dhttps%253A%252F%252Fopentutorials.org%252Ff13fd5ed475cef4%26relation%3Dparent.parent&amp;container_width=0&amp;height=20&amp;href=https%3A%2F%2Fopentutorials.org%2Fcourse%2F1&amp;layout=button_count&amp;locale=ko_KR&amp;sdk=joey&amp;send=true&amp;show_faces=false&amp;width=450" style="border: none; visibility: visible; width: 177px; height: 20px;" class=""></iframe></span></div></li>
+						</ul>
+					</div>
+
+					<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+					<script>
+						(function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0];
+							if (d.getElementById(id)) return;
+							js = d.createElement(s); js.id = id;
+							js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1";
+							js.async = true;
+							fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));
+
+					</script>
+<div id="comment" data-role="collapsible">
+	<h3>댓글</h3>
+
+
+    <form id="comment_new_form" class="comment_form">
+        <div class="form_wrapper">
+            <dl class="comment_form_content">
+                <dt>댓글 본문</dt>
+                <dd>
+                    <textarea id="cmt_content_without_login" name="cmt_content" readonly="" data-login-url="https://opentutorials.org/auth?mode=login&amp;returnURL=https%3A%2F%2Fopentutorials.org%2Fcourse%2F1">댓글을 작성하려면 로그인하셔야 합니다.</textarea>
+                </dd>
+            </dl>
+        </div>
+    </form>
+
+	<ol id="comment_list">
+		<li id="comment146347" data-id="146347">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="95006" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>hyuckkim</strong><a href="#comment146347" name="comment146347"><time>어제</time></a>
+			</div>
+
+			<div class="comment_content">
+				안녕하세요. html 다 보고 Script 보고 있습니다. 글들이 정말 멋있다는 게 계속 느껴지고 막 가슴이 웅장해지고 그러는데요. 혹시 다름이 아니라 짧게 인터뷰를 해 주실 수 있나요? 학교에서 '진로 인터뷰' 라는 이름으로 장래 희망과 관련된 직업을 가진 사람을 한 명 인터뷰 해야 한다고 했는데 인터뷰를 하고 싶습니다. 혹시 대답하기 전에 생각할 게 있다면 25일까지 고민하시다 대답해주셔도 됩니다.<br>
+monkeyhyuck@gmail.com이 제 메일인데 여기로 보내주셔도 되고 아니면 다른 방법이 있으시다면 거기로 보내주셔도 됩니다. 안 보내주신다면 어쩔 수 없고요.. 감사합니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment146244" data-id="146244">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="94959" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>jennylee</strong><a href="#comment146244" name="comment146244"><time>어제</time></a>
+			</div>
+
+			<div class="comment_content">
+				Thanks			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment146037" data-id="146037">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="94550" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>alemem64</strong><a href="#comment146037" name="comment146037"><time>5일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				중학교 학생입니다. 실생활에 사용할 앱에 대한 아이디어가 떠올랐는데 만드려고 인터넷을 뒤져도 무엇부터 시작을 해야할지 모르겠습니다.<br>
+조코딩이라는 유튜버님이 html로 된 웹뷰어앱을 만드는 법을 봤는데 그러머<br>
+제게 필요한 것은 하나의 집단에 로그인을 하고 그 집단의 호스트가 웹주소를 입력하면 집단 내의 사람들은 클릭만으로 호스트가 입력한 웹 또는 앱으로 이동하는<br>
+기능입니다.<br>
+스마트매니저 라는 프로그램이 사용하기 정말 편하던데 서버에 데이터베이스인가 하는 것을 못해요..<br>
+html로 이런 기능을 만들 수 있는건지도 모르겠습니다.. 무엇부터 시작해야 빠르게 앱을 만들 수 있을까요?			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment145835" data-id="145835">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="94244" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>초록빛 나무</strong><a href="#comment145835" name="comment145835"><time>6일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				좋은 강의 정말 고맙습니다!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment145826" data-id="145826">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="94239" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/94239.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>김경모</strong><a href="#comment145826" name="comment145826"><time>6일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				머신러닝 야학신청했습니다. 감사합니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment145723" data-id="145723">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="94221" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>banaba</strong><a href="#comment145723" name="comment145723"><time>7일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				오늘부터 재밌게 공부해보려고 합니다. 오리엔테이션 영상만 봤는데도 기대되네요! 20.08.04 추을발!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment145509" data-id="145509">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="94055" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/94055.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>조윤상</strong><a href="#comment145509" name="comment145509"><time>8일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				좋은 선생님과 친구들을 만나 함께 공부하게 되어, 신이납니다!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment145443" data-id="145443">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="94018" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>waywayway</strong><a href="#comment145443" name="comment145443"><time>9일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				저도 시작합니다^^			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment145338" data-id="145338">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="93976" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>수분자몽</strong><a href="#comment145338" name="comment145338"><time>10일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020. 8. 1 생활코딩 열심히 배워보겠습니다.<br>
+지식 나눔 감사드려요!!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment145182" data-id="145182">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="93779" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/93779.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>Jaya Kim</strong><a href="#comment145182" name="comment145182"><time>12일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				좋은 컨텐츠와 지식 나눔 감사합니다. 많은 도움이 되고 있어요.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment145132" data-id="145132">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="93754" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>relazing</strong><a href="#comment145132" name="comment145132"><time>12일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				서로의 입장도 바꿔보는 훈훈한 커뮤니티입니다.. 8 ball pool game - <a href="https://8-ballpool.com/">https://8-ballpool.com/</a>			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment144949" data-id="144949">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="93645" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>코딩합니다</strong><a href="#comment144949" name="comment144949"><time>15일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020년 7월27일, 저도 시작합니다! 생활코딩 감사합니다!!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment144925" data-id="144925">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="93626" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>발랄한기운</strong><a href="#comment144925" name="comment144925"><time>15일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020년 7월 27일 시작합니다 !			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment144905" data-id="144905">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="93619" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/93619.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>Sang Min Kim</strong><a href="#comment144905" name="comment144905"><time>15일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020년 7월 27일 시작합니다!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment144904" data-id="144904">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="93617" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>씽푸미니</strong><a href="#comment144904" name="comment144904"><time>15일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				새로운 기회를 주셔서 감사합니다!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment144352" data-id="144352">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="93158" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>박중위</strong><a href="#comment144352" name="comment144352"><time>22일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				새로운 시작을 생활코딩과 함께~!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment144271" data-id="144271">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="93086" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>ray07</strong><a href="#comment144271" name="comment144271"><time>23일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020.07.19<br>
+시작!!!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment144186" data-id="144186">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92855" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>이승우</strong><a href="#comment144186" name="comment144186"><time>24일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				생활코딩 님 덕분에 프로그래머의 꿈을 가지게 되었습니다<br>
+정말 감사합니다			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment144086" data-id="144086">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92934" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>덤비이글스</strong><a href="#comment144086" name="comment144086"><time>25일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				열심히 해보겠습니다..<br>
+<br>
+시작!!!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment143803" data-id="143803">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92799" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>지로</strong><a href="#comment143803" name="comment143803"><time>28일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020년 7월 14일 코딩으로 인생 바꿔보겠습니다 파이팅!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment143678" data-id="143678">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92745" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/92745.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>홍지혜</strong><a href="#comment143678" name="comment143678"><time>29일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				07.13.2020 시작!!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment143639" data-id="143639">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="91837" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/91837.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>Donghoon Kam</strong><a href="#comment143639" name="comment143639"><time>29일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				START			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment143616" data-id="143616">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92704" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>하늘콩땅콩</strong><a href="#comment143616" name="comment143616"><time>29일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				인생의 마지막 도전이자 최초의 도전이라 생각하고 시작해봅니다! 모두의 성공을 기원 합니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment143587" data-id="143587">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92679" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>남붕어</strong><a href="#comment143587" name="comment143587"><time>29일 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020.07.13 시작합니다!^-^/			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment143523" data-id="143523">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92547" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>앞으로가자</strong><a href="#comment143523" name="comment143523"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				시작 합니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment143143" data-id="143143">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92403" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>dnekdls</strong><a href="#comment143143" name="comment143143"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/07/09 시작합니당			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142829" data-id="142829">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92059" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>glegle</strong><a href="#comment142829" name="comment142829"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/07/07 시작합니다!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142776" data-id="142776">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92145" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>뽀짝이</strong><a href="#comment142776" name="comment142776"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/07/07 시작합니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142769" data-id="142769">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92118" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>Chano</strong><a href="#comment142769" name="comment142769"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/07/07 시작합니다			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142732" data-id="142732">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="92074" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/92074.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>박정우</strong><a href="#comment142732" name="comment142732"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				07/06 시작합니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142712" data-id="142712">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="91949" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>오니</strong><a href="#comment142712" name="comment142712"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				7/6 시작 :)			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142621" data-id="142621">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="91962" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>시현</strong><a href="#comment142621" name="comment142621"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/07/06 한 달정도 맛보기로 조금 배웠는데 다시 한 번 제대로 배워보고싶단 생각이 들어 찾다가 만나게됐습니다.<br>
+잘 부탁드려요 :)			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142412" data-id="142412">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="89836" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>오신비</strong><a href="#comment142412" name="comment142412"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020, 7, 3, 시작			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142411" data-id="142411">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="91867" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>MOMO</strong><a href="#comment142411" name="comment142411"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/07/03 시작합니당			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142410" data-id="142410">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="91867" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>MOMO</strong><a href="#comment142410" name="comment142410"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/07/03 시작합니당			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment142401" data-id="142401">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="91861" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>MARS</strong><a href="#comment142401" name="comment142401"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				재밌게 배우겠습니다~!!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment141886" data-id="141886">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="91241" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>Jinnie</strong><a href="#comment141886" name="comment141886"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/06/29 시작합니다 :)			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment141637" data-id="141637">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="91239" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>공백</strong><a href="#comment141637" name="comment141637"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/6/27 시작, 댓글 다시 달수 있도록 노력하겠습니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment141158" data-id="141158">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="91071" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>78세 안전모</strong><a href="#comment141158" name="comment141158"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/06/23 WEB1 시작			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment140953" data-id="140953">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="90800" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>홀</strong><a href="#comment140953" name="comment140953"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				감사합니다. 처음이어서 뭘 공부할 지도 모르겠는데 걱정을 덜 것 같습니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment140816" data-id="140816">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="89792" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>김재령</strong><a href="#comment140816" name="comment140816"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				갓고잉님 감사합니다 주변에 코딩을 배울만한 곳이 없었는데 이런곳을 찾아서 너무 좋습니다			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment140511" data-id="140511">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="90627" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>kael</strong><a href="#comment140511" name="comment140511"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				6/17 감사합니다. 잘 배우겠습니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment140473" data-id="140473">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="6091" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/6091.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>pupu</strong><a href="#comment140473" name="comment140473"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/06/17 다시 시작을 합니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment140331" data-id="140331">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="90348" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/90348.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>송오석</strong><a href="#comment140331" name="comment140331"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/06/15 시작했습니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment140255" data-id="140255">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="90323" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>돌순이</strong><a href="#comment140255" name="comment140255"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020/06/15 시작			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment140219" data-id="140219">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="90314" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>orion3</strong><a href="#comment140219" name="comment140219"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020614시작			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment140171" data-id="140171">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="90294" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/90294.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>Seong Gyeom Kim</strong><a href="#comment140171" name="comment140171"><time>한 달 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				2020.06.14 완료			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment140001" data-id="140001">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="90253" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>유부초밥김밥천국</strong><a href="#comment140001" name="comment140001"><time>2개월 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				시작합니다. 좋은 자료 감사합니다.			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment139592" data-id="139592">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="89928" src="/static/img/common/40_profile.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>옴므박탈</strong><a href="#comment139592" name="comment139592"><time>2개월 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				시작!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+		<li id="comment139393" data-id="139393">
+			<div class="profile_image">
+				<img class="profile_icon" data-id="89853" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/avatar/40/89853.png" alt="">
+			</div>
+
+
+			<div class="name time">
+				<strong>남희정</strong><a href="#comment139393" name="comment139393"><time>2개월 전</time></a>
+			</div>
+
+			<div class="comment_content">
+				감사합니다!			</div>
+
+			<div class="buttons">
+				<a class="icon block reply" href="#"><span class="ico ico_reply"></span> 답글</a>
+			</div>
+		</li>
+	</ol>
+
+	<div id="cmt_more">
+		<a href="#"><span>더 보기</span></a>
+	</div>
+</div>
+						<div id="topic_move_dialog" class="dialog hidden">
+							<div class="wrapper">
+								<p>챕터를 드래그앤드롭해서 위치를 이동시켜 주세요.</p>
+								<div class="btns">
+									<button id="moveSave">저장</button>
+									<button id="moveCancel">취소</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="..\js\bootstrap.min.js"></script>
+</body>
+</html>
