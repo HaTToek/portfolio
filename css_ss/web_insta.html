@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width">
+        <style>
+            div {
+                flex-shrink: 0;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                }
+            .topbar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 29px;
+                background-color: white;
+                color:black;
+                position: fixed;
+                top:0;
+                left:0;
+                right:0;
+                width:100%;
+                height:44px;
+            }
+            .bottombar{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: white;
+                color:black;
+                position:fixed;
+                width:100%;
+                height:50px ;
+                bottom:0;
+            }
+            .story{
+                display:flex;
+                display:block;
+                flex-direction: column;
+                font-size:x-small;
+                justify-content: center;
+                height: 122px;
+                padding: 0 4px;
+                top: 2px;
+                left:0;
+                width: 80px;
+            }
+            .rok{
+                display: flex;
+                align-content: center;
+                width: 100%;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            .ink{
+                outline: 0;
+                overflow:auto hidden;
+                background-color: khaki;
+                width:auto;
+                display: flex;
+                flex-direction: row;
+                height:120px;
+                top: 45px;
+                padding:10px 0;
+            }
+            body{
+                margin:0;
+                
+            }
+            .test{
+                background-color: white;
+            }
+            .tit{
+                display:flex;
+                flex-direction: row;
+                height:60px;
+                align-items: center;
+                width:100%;
+                justify-content: space-between;
+                
+            }
+            .post1_1{
+                display: block;
+                display: flex;
+                align-self:center;
+                justify-content: center;
+                flex:0 0 0;
+            }
+            .post1_2{
+                margin-left: 12px;
+                display: flex;
+                width:100%;
+                flex-grow: 1;
+                flex-shrink: 1;
+                align-items:flex-start;
+            }
+            .post1_3{
+                padding:8px;
+            }
+            .bobo{
+                
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding:16px;
+            }
+            .bar{
+                padding-top: 4px;
+                display:flex;
+                flex-direction: row;
+                height:40px;
+                align-items: center;
+            }
+            .three{
+                display:flex;
+                width:100%;
+                flex-grow: 1;
+                flex-shrink: 1;
+                align-items: center;
+                padding:8px;
+            }
+            .tone,.ttwo,.tthree{
+                padding:8px;
+            }
+            .good{
+                display:flex;
+                
+                align-items: center;
+                margin-left: 16px;
+            }
+            .good_font{
+                font-size:small;
+                padding-left: 8px;
+            }
+            .comment{
+                font-size:small;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            #last
+            {
+                margin-bottom: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ink">
+            <div class="rok">
+                <div class="story">
+                    <img src="./pro.png" width="56" height="56">
+                    <div>내 스토리</div>
+                </div>
+                <div class="story">
+                    <img src="./pro.png" width="56" height="56">
+                    <div>내 스토리</div>
+                </div>
+                <div class="story">
+                    <img src="./pro.png" width="56" height="56">
+                    <div>내 스토리</div>
+                </div>
+                <div class="story">
+                    <img src="./pro.png" width="56" height="56">
+                    <div>내 스토리</div>
+                </div>
+                <div class="story">
+                    <img src="./pro.png" width="56" height="56">
+                    <div>내 스토리</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test">
+            <article>
+                <div class="tit">
+                    <div class="bobo">
+                    <div class="post1_1">
+                        <img src="./pro.png" width='32' height='32'>
+                        
+                    </div>
+                    <div class="post1_2">
+                        스터디
+                    </div>
+                    </div>
+                    <div class="post1_3">
+                        <img src="./dot.png" width='36' height='36'>
+                    </div>
+                </div>
+                <div>
+                    <img src='./KakaoTalk_20200810_182832538.jpg' width='375.2px' height='375.2px'>
+                </div>
+                <div class='bar'>
+                    <div class='three'>
+                        <span class='tone'>
+                            <img src='hurt.png' width='24' height='24'>
+                        </span>
+                        <span class='ttwo'>
+                            <img src='mass.png' width='24' height='24'>
+                        </span>
+                            <span class='tthree'>
+                                <img src='dir.png' width='24' height='24'>
+                        </span>
+                    </div>
+                        
+                    <div class='fo'>
+                        <img src='dot.png' width='24' height='24'>
+                    </div>
+                </div>
+                <div class='good'>
+                    <div>
+                        <img src='./pro.png' width="20" height='20'>
+                    </div>
+                    <div class='good_font'>
+                        지상근님 외 333명이 좋아합니다
+                    </div>
+                </div>
+                <div class="comment">
+                    <div>
+                        지상근 아.....
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="tit">
+                    <div class="bobo">
+                    <div class="post1_1">
+                        <img src="./pro.png" width='32' height='32'>
+                        
+                    </div>
+                    <div class="post1_2">
+                        스터디
+                    </div>
+                    </div>
+                    <div class="post1_3">
+                        <img src="./dot.png" width='36' height='36'>
+                    </div>
+                </div>
+                <div>
+                    <img src='./KakaoTalk_20200808_084913483.jpg' width='375.2px' height='375.2px'>
+                </div>
+                <div class='bar'>
+                    <div class='three'>
+                        <span class='tone'>
+                            <img src='hurt.png' width='24' height='24'>
+                        </span>
+                        <span class='ttwo'>
+                            <img src='mass.png' width='24' height='24'>
+                        </span>
+                            <span class='tthree'>
+                                <img src='dir.png' width='24' height='24'>
+                        </span>
+                    </div>
+                        
+                    <div class='fo'>
+                        <img src='dot.png' width='24' height='24'>
+                    </div>
+                </div>
+                <div class='good'>
+                    <div>
+                        <img src='./pro.png' width="20" height='20'>
+                    </div>
+                    <div class='good_font'>
+                        지상근님 외 533명이 좋아합니다
+                    </div>
+                </div>
+                <div class="comment">
+                    <div>
+                        김호성 ...
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="tit">
+                    <div class="bobo">
+                    <div class="post1_1">
+                        <img src="./pro.png" width='32' height='32'>
+                        
+                    </div>
+                    <div class="post1_2">
+                        스터디
+                    </div>
+                    </div>
+                    <div class="post1_3">
+                        <img src="./dot.png" width='36' height='36'>
+                    </div>
+                </div>
+                <div>
+                    <img src='./KakaoTalk_20200808_092424380.jpg' width='375.2px' height='375.2px'>
+                </div>
+                <div class='bar'>
+                    <div class='three'>
+                        <span class='tone'>
+                            <img src='hurt.png' width='24' height='24'>
+                        </span>
+                        <span class='ttwo'>
+                            <img src='mass.png' width='24' height='24'>
+                        </span>
+                            <span class='tthree'>
+                                <img src='dir.png' width='24' height='24'>
+                        </span>
+                    </div>
+                        
+                    <div class='fo'>
+                        <img src='dot.png' width='24' height='24'>
+                    </div>
+                </div>
+                <div class='good'>
+                    <div>
+                        <img src='./pro.png' width="20" height='20'>
+                    </div>
+                    <div class='good_font'>
+                        지상근님 외 363명이 좋아합니다
+                    </div>
+                </div>
+                <div class="comment" id='last'>
+                    <div>
+                        스터디 ㅋㅋ
+                    </div>
+                </div>
+            </article>
+        </div>
+            
+        <div class="topbar">
+                
+            <img  src="./cam.png" width="24" height="24">
+            instagram
+            
+            <img  src="./dir.png" width="24" height="24">
+        </div>
+        <div class="bottombar">
+            <img  src="./home.png" width="24" height="24">
+            <a href='https://www.instagram.com/explore/'>  <img  src="./pl.png" width="24" height="24"></a>
+            <img  src="./gl.png" width="24" height="24">
+            <img  src="./hurt.png" width="24" height="24">
+            <a href='https://www.instagram.com/wjsghk1588/'><img  src="./hu.png" width="24" height="24"></a>
+        </div>
+    </body>
+        
+            
+        
+
+</html>
