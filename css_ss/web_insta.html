@@ -22,7 +22,7 @@
                 align-items: center;
                 font-size: 29px;
                 background-color: white;
-                color:black;
+                /*color:black; */
                 position: fixed;
                 top:0;
                 left:0;
@@ -34,8 +34,8 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                background-color: white;
-                color:black;
+                background-color: white; 
+                /* color:black; */
                 position:fixed;
                 width:100%;
                 height:50px ;
@@ -49,7 +49,7 @@
                 justify-content: center;
                 background-color: #fafafa;
                 border-bottom:1px solid #dbdbdb;
-                border-top:1px solid #dbdbdb;
+                border-top:1px solid #dbdbdb; 
                 height: 122px;
                 padding: 0 4px;
                 top: 2px;
@@ -75,10 +75,10 @@
             }
             body{
                 margin:0;
-                
+                overflow-x: hidden;
             }
             .test{
-                background-color: white;
+                background-color: white; 
             }
             .tit{
                 display:flex;
@@ -152,30 +152,95 @@
             {
                 margin-bottom: 50px;
             }
+            .white{
+                background-color: white;
+                color:black;
+            }
+            .dark{
+                background-color: black;
+                color:white;
+            }
+            .dark button{
+                background-color: black;
+                color:white;
+            }
+            .dark .topbar{ 
+                background-color: black;
+                color:white;
+            }
+            
+            .dark .story{ 
+                background-color: black;
+                color:white;
+                border-color: black;
+            }
+
+            
+            .dark .test{ 
+                background-color: black;
+                color:white;
+            }
+            
+            .dark .bottombar{ 
+                background-color: black;
+                color:white;
+            }
+            
+            button{
+                color:black;
+                background:white;
+                border:0 solid ;
+                margin:0;
+                padding:0;
+            }
+            .img_show{
+                display:none;
+            }
+            .push_bar{
+                display:flex;
+                flex-direction:row;
+            }
         </style>
+       
     </head>
-    <body>
+    <body class="white">
         <div class="ink">
             <div class="rok">
                 <div class="story">
-                    <img src="./pro.png" width="56" height="56">
-                    <div>내 스토리</div>
+                    <button type="button" onclick="story_img();">
+                        <img src="./pro.png" width="56" height="56">
+                        <div style='font-size:x-small'>내 스토리</div>
+                    </button> 
                 </div>
                 <div class="story">
-                    <img src="./pro.png" width="56" height="56">
-                    <div>내 스토리</div>
+                    <button type='button' onclick='story_img();'>
+                        <img src="./pro.png" width="56" height="56">
+                        <div style='font-size:x-small'>내 스토리</div>
+                    </button>
                 </div>
                 <div class="story">
-                    <img src="./pro.png" width="56" height="56">
-                    <div>내 스토리</div>
+                    <button type='button' onclick='story_img();'>
+                        <img src="./pro.png" width="56" height="56">
+                        <div style='font-size:x-small'>내 스토리</div>
+                    </button>
                 </div>
                 <div class="story">
-                    <img src="./pro.png" width="56" height="56">
-                    <div>내 스토리</div>
+                    <button type='button' onclick='story_img();'>
+                        <img src="./pro.png" width="56" height="56">
+                        <div style='font-size:x-small'>내 스토리</div>
+                    </button>
                 </div>
                 <div class="story">
-                    <img src="./pro.png" width="56" height="56">
-                    <div>내 스토리</div>
+                    <button type='button' onclick='story_img();'>
+                        <img src="./pro.png" width="56" height="56">
+                        <div style='font-size:x-small'>내 스토리</div>
+                    </button>
+                </div>
+                <div class="story">
+                    <button type='button' onclick='story_img();'>
+                        <img src="./pro.png" width="56" height="56">
+                        <div style='font-size:x-small'>내 스토리</div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -189,7 +254,8 @@
                         
                     </div>
                     <div class="post1_2">
-                        스터디
+                        
+                    <button type='button' onclick="black_white(body.className); ">스터디</button>
                     </div>
                     </div>
                     <div class="post1_3">
@@ -197,7 +263,9 @@
                     </div>
                 </div>
                 <div>
-                    <img src='./이미지/robinia-5092118_1920.jpg' width='375.2px' height='375.2px'>
+                    <button type="button" onclick="slideshow();"><img class='slide' src='./이미지/sea-4933717_1920.jpg'  width='375.2px' height=375.2px></button>
+                    <button type="button" onclick="slideshow();"> <img class='slide' src='./이미지/robinia-5092118_1920.jpg' width='375.2px' height='375.2px'></button>
+                    <button type="button" onclick="slideshow();"><img class='slide' src='./이미지/seychelles-4916045_1920.jpg' width='375.2px' height=375.2px></button>
                 </div>
                 <div class='bar'>
                     <div class='three'>
@@ -228,6 +296,10 @@
                     <div>
                         지상근 아.....
                     </div>
+                    <div class="comunity"></div>
+                    <div class="comunity"></div>
+                    <div class="comunity"></div>
+                    <div class="push_bar"><input type="text" /> </div>
                 </div>
             </article>
             <article>
@@ -332,9 +404,8 @@
         </div>
             
         <div class="topbar">
-                
             <i style='margin:0 16px; font-size: 24px;' class="fas fa-camera"></i>
-        <div style='font-family:"insta",serif' >instagram</div>
+            <div style='font-family:"insta",serif' >instagram</div>
             <i style='font-size: 24px; margin:0 16px;' class="fas fa-paper-plane"></i>
         </div>
         <div class="bottombar">
@@ -342,8 +413,134 @@
             <i style='font-size: 24px;' class="fas fa-search"></i>
             <i style='font-size: 24px;' class="far fa-plus-square"></i>
             <i style='font-size: 24px;' class="far fa-heart"></i>
-            <a style='color:black' href='web_insta_my.html'><i class="fas fa-user"></i></a>
+            <i style='font-size: 24px;' class="fas fa-user"></i>
         </div>
+        <div class='img_show'>
+            <div>
+                <button type="button" onclick="img_view();">
+                    <img class='story_img_show' src='./이미지/sea-4933717_1920.jpg'  width='375.2px' height=375.2px>
+                </button>
+                    
+                <button type="button" onclick="img_view();">
+                    <img class="story_img_show" src="이미지/sand-5100918_1920.jpg">
+                </button>
+            </div>
+        </div>
+        <script>
+            var index1=0;
+            var index2=0;
+            var len=1;
+            var lo=0;
+            var col=0;
+            window.onload=function(){
+                slideshow();
+            }
+            function slideshow(){
+                var i;
+                var x=document.getElementsByClassName("slide");
+                for(i=0;i<x.length;i++){
+                    x[i].style.display="none";
+                }
+                index1++;
+                if(index1>x.length){
+                    index1=1;
+                }
+                x[index1-1].style.display="block";
+            }
+            function story_img(){
+                var j;
+                var z=document.getElementsByClassName("img_show");
+                var home1=document.getElementsByClassName("test");
+                var home2=document.getElementsByClassName("ink");
+                var home3=document.getElementsByClassName("topbar");
+                var home4=document.getElementsByClassName("bottombar");
+                for(j=0;j<home1.length;j++)
+                {
+                    home1[j].style.display="none";
+                }
+                for(j=0;j<home2.length;j++)
+                {
+                    home2[j].style.display="none";
+                }
+                for(j=0;j<home3.length;j++)
+                {
+                    home3[j].style.display="none";
+                }
+                for(j=0;j<home4.length;j++)
+                {
+                    home4[j].style.display="none";
+                }
+                 
+                for(j=0;j<z.length;j++)
+                {
+                    z[j].style.display="block"
+                }
+                img_view();
+                
+            }
+            function img_view(){
+                var k;
+                var p=document.getElementsByClassName("story_img_show");
+                for(k=0;k<p.length;k++){
+                    p[k].style.display="none";
+                }
+                index2++;
+                if(index2>p.length){
+                    for(k=0;k<p.length;k++){
+                    p[k].style.display="none";
+                }
+                    index2=0;
+                    show();
+                }
+                if(index2<=p.length){
+                    p[index2-1].style.display="block";
+
+                }
+            }
+            function show(){
+                var j;
+                var z=document.getElementsByClassName("img_show");
+                var home1=document.getElementsByClassName("test");
+                var home2=document.getElementsByClassName("ink");
+                var home3=document.getElementsByClassName("topbar");
+                var home4=document.getElementsByClassName("bottombar");
+                for(j=0;j<home1.length;j++)
+                {
+                    home1[j].style.display="block";
+                }
+                for(j=0;j<home2.length;j++)
+                {
+                    home2[j].style.display="block";
+                }
+                for(j=0;j<home3.length;j++)
+                {
+                    home3[j].style.display="flex";
+                }
+                for(j=0;j<home4.length;j++)
+                {
+                    home4[j].style.display="flex";
+                }
+                 
+                for(j=0;j<z.length;j++)
+                {
+                    z[j].style.display="none"
+                }
+            }
+            function black_white(vvv){
+              
+                if(col==0){
+                    document.body.className="dark";
+                    
+                    col=1;
+                }
+                else if(col==1){
+                    document.body.className="white";
+                    col=0;
+
+                }
+            }
+       </script>
+
     </body>
         
             
