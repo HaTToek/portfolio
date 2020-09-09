@@ -1,0 +1,27 @@
+<head>
+    
+    <meta name="viewport" content="width=device-width">
+    <style>
+        .cn{
+            display:flex;
+            flex-direction: column;
+            margin-top:50%;
+        }
+    </style>
+
+</head>
+<div style="text-align: center; color:red; margin-top: 2%">
+    <!--만약 message의 길이가 0보다 길면 message를 띄워라-->
+    <% if(message.length > 0) { %>
+        <%= message %>
+        <% } %>
+        </div>
+        <form action="/login" method="POST" class="signupform">
+        <div class='cn'>
+            <label for="email">E-MAIL</label>
+            <input name="email" type="email" required />
+            <label for="password">PASSWORD</label>
+            <input name="password" type="password" required />
+            <button class="btn">LOGIN!</button>
+        </div>
+        </form>
