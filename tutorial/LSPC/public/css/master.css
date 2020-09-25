@@ -1,0 +1,35 @@
+@font-face{
+    font-family: "insta";
+    src: url("/font/billabong.otf");
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+#id_lo,#password_lo{
+    flex-direction: column;
+    margin:5%;
+}
+.btn{
+    width:100%;
+    background-color:rgba(0,149,246,.3);
+    border: 0px solid ;
+    color:white;
+    
+}
+input{
+    background-color: #FAFAFA;
+    padding:0;
+    border: 0px solid ;
+    width:260px;
+    height: 26px;
+}
+.put{
+    display:flex;
+    flex-direction:column;
+}
+a{
+    color: #0095f6;
+}

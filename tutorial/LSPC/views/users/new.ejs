@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head') %>
+        <style>
+            @font-face{
+                font-family: "insta";
+                src: url("/font/billabong.otf");
+            }
+            body{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;    
+            }
+            #id_lo,#password_lo{
+                flex-direction: row;
+                margin:5%;
+            }
+            .btn{
+                width:100%;
+                background-color:rgba(0,149,246,.3);
+                border: 0px solid ;
+                color:white;
+                
+            }
+            input{
+                background-color: #FAFAFA;
+                border: 0px solid ;
+                width:260px;
+                height: 26px;
+
+            }
+            .put{
+                display:flex;
+                flex-direction:column;
+            }
+            h1,h2{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+            }
+            h2{
+                color: #8e8e8e;
+            }
+            .container{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                flex-direction: column;
+            }
+            a{
+                color: #0095f6;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style='font-family:"insta",serif;'>instagram</h1>
+        <div class='container'>
+            <h2>친구들의 사진과 동영상을 보려면 가입하세요.</h2>
+            <form class="content" action="/users" method="POST">
+                <div class="put">
+                    <label for='username'>사용자 이름</label>
+                    <div>
+                        <input type='text' id='username' name='username' class="<%= (errors.username)?'is-invalid':'' %>">
+                        <% if(errors.username){ %>
+                            <span><%= errors.username.message %></span>
+                        <% } %> 
+                    </div>
+                </div>
+                <div class="put">
+                    <label for='name'>이름</label>
+                    <div>
+                        <input type='text' id='name' name='name' class="<%= (errors.name)?'is-invalid':'' %>">
+                        <% if(errors.name){ %>
+                            <span><%= errors.name.message %></span>
+                        <% } %> 
+                    </div>
+                </div>
+                <div class="put">
+                    <label for='email'>이메일</label>
+                    <div>
+                        <input type='text' id='email' name='email' class="<%= (errors.email)?'is-invalid':'' %>">
+                        <% if(errors.email){ %>
+                            <span><%= errors.email.message %></span>
+                        <% } %> 
+                    </div>
+                </div>
+                <div class="put">
+                    <label for='password'>비밀번호</label>
+                    <div>
+                        <input type='password' id='password' name='password' class="<%= (errors.password)?'is-invalid':'' %>">
+                        <% if(errors.password){ %>
+                            <span><%= errors.password.message %></span>
+                        <% } %> 
+                    </div>
+                </div>
+                <% if(errors.unhandled){ %>
+                    <div>
+                        <%= errors.unhandled %>
+                    </div>
+                <% } %>
+
+                <div>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div >
+            <div>계정이 있으신가요?<a href="/login">로그인</a></div>
+        </div>
+    </body>
+</html>

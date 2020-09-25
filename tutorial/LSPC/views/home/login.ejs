@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head') %>
+        <link rel="stylesheet" type="text/css" href="css/master.css">
+    </head>
+    <body>
+        <h1 style='font-family:"insta",serif;' id="insta">
+            instagram
+        </h1>
+        <form action="login" method="post">
+            <div id='id_lo'>
+                <div>사용자 이름</div>
+                <input type="text" id="username" name="username" value="<%= username %>">
+                <% if(errors.username){ %>
+                  <span><%= errors.username %></span>
+                <% } %>
+            </div>
+            <div id='password_lo'>
+                <div>비밀번호</div>
+                <input type="password" id="password" name="password" value="" >
+                <% if(errors.password){ %>
+                  <span ><%= errors.password %></span>
+                <% } %>
+            </div>
+            <% if(errors.login){ %>
+              <div ><%= errors.login %></div>
+            <% } %>
+    
+            <div >
+              <input class="btn" type="submit" value="Submit">
+            </div>
+    
+          </form>
+        </form>
+        <div >
+            <div>계정이 없으신가요?<a href="/users/new">가입하기</a></div>
+        </div>
+
+    </body>
+</html>

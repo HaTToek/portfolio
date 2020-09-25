@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="ink">
+      <div class="rok">
+          <div class="story">
+              <button type="button" onclick="story_img();">
+                  <img src="./이미지/pro.png" width="56" height="56">
+                  <div style='font-size:x-small'>내 스토리</div>
+              </button> 
+          </div>
+          <div class="story">
+              <button type='button' onclick='story_img();'>
+                  <img src="./이미지/pro.png" width="56" height="56">
+                  <div style='font-size:x-small'>내 스토리</div>
+              </button>
+          </div>
+          <div class="story">
+              <button type='button' onclick='story_img();'>
+                  <img src="./이미지/pro.png" width="56" height="56">
+                  <div style='font-size:x-small'>내 스토리</div>
+              </button>
+          </div>
+          <div class="story">
+              <button type='button' onclick='story_img();'>
+                  <img src="./이미지/pro.png" width="56" height="56">
+                  <div style='font-size:x-small'>내 스토리</div>
+              </button>
+          </div>
+          <div class="story">
+              <button type='button' onclick='story_img();'>
+                  <img src="./이미지/pro.png" width="56" height="56">
+                  <div style='font-size:x-small'>내 스토리</div>
+              </button>
+          </div>
+          <div class="story">
+              <button type='button' onclick='story_img();'>
+                  <img src="./이미지/pro.png" width="56" height="56">
+                  <div style='font-size:x-small'>내 스토리</div>
+              </button>
+          </div>
+      </div>
+  </div>
+    <div class="test">
+      <tbody>
+        <% if(posts ==null || posts.length == 0){ %>
+          <div>새로운 게시물이 없습니다.</div>
+        <% } %>
+        <% posts.forEach(function(post) { %>
+          <div class="tit">
+              <div class="bobo">
+                <a href='/mypage'>
+                  <i style='font-size: 24px;' class="fas fa-user"></i>
+                </a>
+              <div class="post1_2">
+                  <%= post.author ? post.author.username : "" %>
+              </div>
+              </div>
+              <div class="post1_3">
+                <form action="/posts/<%= post._id %>?_method=delete<%= getPostQueryString(true) %>" method="post" class="d-inline">
+                  <a  href="javascript:void(0)" onclick="confirm('Do you want to delete this?')?this.parentElement.submit():null;">
+                    <i style='font-size:16px' class="fas fa-ellipsis-h"></i>
+                  </a>
+                </form>
+                  
+              </div>
+          </div>
+          <div>
+              <img src='./이미지/sand-5100918_1920.jpg' width='375.2px' height='375.2px'>
+          </div>
+          <div class='bar'>
+              <div class='three'>
+                <span class='tone'>
+                      <i style='font-size: 24px;' class="fas fa-heart"></i>
+                    </span>
+                    <span class='ttwo'>
+                      <a href="/posts/<%= post._id %><%= getPostQueryString() %>">
+                        <i style='font-size:24px' class="far fa-comment"></i>
+                      </a>
+                    </span>
+                    <span class='tthree'>
+                      <i style='font-size: 24px;' class="fas fa-paper-plane"></i>
+                    </span>
+              </div>
+                  
+              <div class='fo'>
+                
+                <i style='font-size:24px' class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <div class='good'>
+              <a href='/mypage'>
+                <i style='font-size: 24px;' class="fas fa-user"></i>
+              </a>
+              <div class='good_font'>
+                <%= post.views %>
+              </div>
+          </div>
+          <span data-date="<%= post.createdAt %>"></span>
+          
+        <% }) %>
+        </tbody>
+    </div>
+    <%- include('./partials/head') %>
+    <%- include('./partials/foot') %>
+  </body>
+</html>
