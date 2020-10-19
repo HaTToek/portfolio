@@ -1,0 +1,427 @@
+@font-face { 
+    font-family: 'NEXON Lv1 Gothic OTF Bold'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal; 
+}  
+*{
+    font-family: "NEXON Lv1 Gothic OTF Bold";
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color:#4f4f4f; */
+   background-color:#4f4f4f;
+}
+input, button{  
+    outline: none;
+    background-color: transparent;
+}
+.nav > div > input{
+    color:white;
+}
+.nav{
+    opacity:0.5;
+    position: absolute;
+    display:none;
+    flex-direction: row;
+    background-color:#4f4f4f;
+    top:0;
+    right: 10%;
+    padding:20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.menu{
+    margin-top: 5vw;
+    margin-right:10vw;
+    display: none;
+    position:absolute;
+    flex-direction: column;
+    right:0;
+}
+.smenu{
+    border: 0 solid;
+    background-color: transparent;
+    font-size: 5vw;
+    width:25vw;
+    height:20vh;
+    color:white;
+    cursor: pointer;
+    transition:all 0.8s;
+}
+.smenu:hover{
+    box-shadow:-25vw 0 0 0 rgba(0,0,0,0.5) inset; 
+}
+
+#back{
+    color:white;
+}
+.bot{
+    background:#f7f7f7;
+    color:black;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+}
+.bot:hover{
+    background:black;
+    color:#f7f7f7;
+}
+
+.right{
+    border:0px solid;
+    margin:10px 5px;
+    transition:800ms ease all;
+}
+.right:hover{
+    border-bottom:1px solid white;
+}
+.container{
+    width:100%;
+    height:100%;
+    transition: 1s;
+}
+.home{
+    transition: 1s;
+    top:0;
+    position:fixed;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:#f7f7f7 ;
+}
+.about_me{
+    transition: 1s;
+    display: none;
+    top:0;
+    position:fixed;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    background-color:#f7f7f7 ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.works{
+    overflow: hidden;
+    transition: 1s;
+    display: none;
+    flex-direction: column;
+    top:0;
+    position: relative;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    background-color:#f7f7f7 ;
+}
+.connect{
+    transition: 1s;
+    display: none;
+    top:0;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    background-color:#f7f7f7 ;
+}
+.wrap{
+    color:black;
+    margin:7vh 0;
+}
+.lg-text{
+    font-size:5vw;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+#dyname{
+    position: relative;
+    display:inline-block;
+}
+#dyname::after{
+    content:"";
+    display: block;
+    position: absolute;
+    top:0;
+    right:-10px;
+    width:4px;
+    height:100%;
+    background-color:black;
+}
+#dyname.active::after{
+    display:none;
+}
+.about_me{
+    /* padding:30vh 10vw; */
+    justify-content: center;
+    align-self: center;
+}
+.card_size{
+    width:450px;
+    height:270px;
+}
+.mycard{
+    position: relative;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+figure{
+    color: #f7f7f7;
+    backface-visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+}
+
+figure.front{
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+figure.back, .mycard.flipped{
+    transform: rotateY(180deg);
+}
+
+figure img{
+    position: relative;
+    display: block;
+    opacity: 0.7;
+    width:100%;
+    height:100%;
+}
+
+figure .introduce {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    padding: 2em;
+    backface-visibility: hidden;
+}
+
+.front .introduce{
+    font-size: 1.25em;
+}
+
+.front .introduce:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    content: '';
+    opacity: 0;
+    transform: translate3d(0,50%,0);
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.front:hover .introduce:before{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.front h2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #272833;
+    transition: transform 0.35s, color 0.35s;
+    transform: translate3d(0,-50%,0);
+}
+
+
+.front h2:after{
+    position: absolute;
+    bottom: -10px;
+    left: 70px;
+    right: 70px;
+    height: 2px;
+    background: #f7f7f7;
+    content: '';
+    transition: transform 0.35s;
+    transform: translate3d(-130%,0,0);
+}
+
+.front:hover h2 {
+    color: #f7f7f7;
+    /* -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    transform: translate3d(0,-50%,0) translate3d(0,-40px,0); */
+}
+
+.front:hover h2:after {
+    transform: translate3d(0,0,0);
+}
+
+.front p {
+    font-size: 68.5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    transform: translate3d(0,10px,0);
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.back .introduce:before, .back .introduce:after{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.45s, transform 0.45s;
+    transition-delay: 1s;
+}
+
+.back .introduce:before{
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+    transform: scale(0,1);
+}
+
+.back .introduce:after{
+    border-right: 1px solid #f7f7f7;
+    border-left: 1px solid #f7f7f7;
+    transform: scale(1,0);
+}
+.mycard.flipped .back{
+    background: black;
+}
+
+.mycard.flipped .back .introduce:before,
+.mycard.flipped .back .introduce:after {
+    opacity: .9;
+    transform: scale(1);  
+}
+
+.back .introduce_content{
+    position: absolute;
+    opacity: 0;
+    transition: opacity .35s, transform .35s;
+    transition-delay: .85s;
+    transform: translate3d(-40px,0,0);
+}
+
+.mycard.flipped .back .introduce_content {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.front:hover p {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.works{
+    justify-content: center;
+    padding:2vh 5vw;
+}
+.works_introduce{
+    display:flex;    
+    flex-wrap: wrap;
+    padding:5vh 0;
+}
+.project{
+    border-radius: 4px;
+    margin:5rem 0;
+    display:flex;
+    position: relative;
+    flex-wrap:wrap;
+    width:100%; 
+}
+.project_img{
+    width:50%;
+    height:26rem;
+}
+.pro_img{
+    height:100%;
+}
+.pro{
+    padding: 4vh 2vw 2vh 8vw;
+    width:100%;
+    height:100%;
+}
+.pro::before{
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 3px;
+        background: black;
+        margin-bottom: 30px;
+        transition: all 0.6s ease;
+}
+.project_name{
+    font-size: xx-large;
+    margin-bottom:4rem;
+}
+.project_contents{
+    font-size: smaller;
+    color:#7a7a7a;
+}
+#card{
+    border-radius: 5%;
+    background-image:url("bike-riding-5557589_1920.png");
+    background-size: 100%;
+    color:black;
+    border:none;
+    position:relative;
+    transition:800ms ease all;
+    transform-style: preserve-3d;
+    box-shadow:10px 10px 10px lightblue
+}
+#card:hover{
+    transform:rotateY(-180deg);
+    background-image:url("bike-riding-5557589_1920.png");
+}
+.card_front{
+    text-align: center;
+    margin:5vh 5vw;
+    font-size: x-large;
+    transform: translateZ(1px);
+}
+.card_back{
+    margin:5vh 5vw;
+    font-size: large;
+    color:#f7f7f7;
+    transform: rotateY(180deg) translateZ(1px);
+}
+@media screen and (max-width: 768px) {
+    .project_img{
+        /* max-width:35rem; */
+        width:100%;  
+        height:auto;
+    }
+} 

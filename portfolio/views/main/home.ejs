@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charser="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="style.css" />
+        <title>이호윤 포트폴리오</title>
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div id="home" class="home"><div class="wrap">
+                    <p id="dyname" class="lg-text"></p>
+                </div>
+                <input value="메뉴" type="button" onclick="btntest(1)" class="bot"/>
+                <input value="자동 페이지" type="button" onclick="autopage()" class="bot"/>
+            </div>
+            <div id="menu" class="menu">
+                <input value="소개" onclick="btntest(2)" type="button" class="smenu">
+                <input value="경험" onclick="btntest(3)" type="button" class="smenu">
+                <input value="연락" onclick="btntest(4)" type="button" class="smenu">
+                <button  onclick="btntest(5)" type="button" class="smenu" id="back">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="about_me" class="about_me">
+                <div class="card_size">
+                    <div id="mycard" class="mycard">
+                        <figure class="front">
+                            <img src="/image/desktop-2325627_1920.jpg" alt="front">
+                            <div class="introduce">
+                                <h2>이호윤</h2>
+                                <p>
+                                    2000.3.9<br>
+                                    010-9426-6153
+                                </p>
+                            </div>			
+                        </figure>
+                        
+                        <figure class="back">
+                        <img src="/image/pen-4337524_1920.jpg" alt="back">
+                            <div class="introduce">
+                                <div class="introduce_content">
+                                    나는 나는
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div id="works" class="works">
+                <div class="works_introduce">
+                    <!-- <div class="project">
+                        <div class="project_img">
+                            <div class="pro_img">
+                                <img src="/image/Cback.png" style=" width:100%; height: 100%;">
+                            </div>
+                        </div>
+                        <div class="project_img">
+                            <div class="pro">
+                                <div class="project_contents">2019.11.25 ~ 2019.12.9</div>
+                                <div class="project_name">포커게임과 모스부호</div>
+                                <div class="project_contents">
+                                    전공시간 만들었던 포커게임과 모스부호 번역기이다.
+                                    포커게임은 카드를 한장씩 나누어주는게 아닌 이미짜여진 텍스트 파일을 읽어서 게임의 승자를 가리는 것이다.
+                                    모스부호 번역기는 문자를 모스부호로, 모스부호를 문자로 번역한다. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_img">
+                            <div class="pro_img">
+                                <img src="/image/python.png" style="width:100%; height: 100%;">
+                            </div>
+                        </div>
+                        <div class="project_img">
+                            <div class="pro">
+                                <div class="project_contents">2019.09.09 ~ 2019.11.24</div>
+                                <div class="project_name">파이썬</div>
+                                <div class="project_contents">
+                                    학교 전공시간에 만든 프로젝트 시력검사 프로그램을 만들었다.<br>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_img">
+                            <div class="pro_img">
+                                <img src="/image/web.png" style="width:100%; height: 100%;">
+                            </div>
+                        </div>
+                        <div class="project_img">
+                            <div class="pro">
+                                <div class="project_contents">2019.11.25 ~ 2019.12.9</div>
+                                <div class="project_name">instagram클론코딩</div>
+                                <div class="project_contents">
+                                    웹에 대해서 배우기 시작하며 만든 instagram클론코딩으로 HTML과 CSS를 배우고 시작하였다. 
+                                </div> 
+                            </div>
+                        </div>
+                    </div> -->
+                    <% posts.forEach(function(post) { %>               
+                        <div class="project">
+                            <div class="project_img">
+                                <div class="pro_img">    
+                                    <img src="/uploads/<%= post.attachment.originalFileName %>" style="width:100%; height: 100%;">
+                                </div>
+                            </div>
+                            <div class="project_img">
+                                <div class="pro">
+                                    <div class="project_contents"><%= post.period %></div>
+                                    <div class="project_name"><%= post.title %></div>
+                                    <div class="project_contents"><%= post.body %></div> 
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+            <div id="connect" class="connect">
+                <div id="card">
+                    <div class="card_front">
+                        <div>
+                            이호윤
+                        </div>
+                    </div>
+                    <div class="card_back">
+                        <div>
+                            이메일: wjsghk1588@naver.com
+                        </div>
+                        <div>
+                            github: <a href="https://github.com/HaTToek" target="_blank" style="color:white;">https://github.com/HaTToek</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="nav" class="nav">
+            <div>
+                <input onclick="btntest(6)" type="button" class="right" value="처음"/>
+            </div>
+            <div>
+                <input onclick="btntest(2)" type="button" class="right" value="소개"/>
+            </div>
+            <div>
+                <input onclick="btntest(3)" type="button" class="right" value="경험"/>
+            </div>
+            <div>
+                <input onclick="btntest(4)" type="button" class="right" value="연락"/>
+            </div>
+        </nav>
+        <% if(isAuthenticated){ %>
+            <td>
+                <th>
+                    <a  href="#">test</a>
+                </th>
+                <th>
+                    <a  href="#">test</a>
+                </th>
+                <th>
+                    <a  href="/logout">logout</a>
+                </th>
+            </td>
+        <% } %>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
