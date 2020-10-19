@@ -1,0 +1,31 @@
+<!-- views/posts/show.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+
+        <h5 class="card-header p-2"><%= post.title %></h5>
+
+          <div> <!-- 1 -->
+            <div ><%= post.body %></div>
+          </div>
+          <% if(post.attachment) {%>
+            <div>파일
+              <%= post.attachment.originalFileName %>
+              <img src="/uploads/<%= post.attachment.originalFileName %>">
+            </div>
+            <% } %>
+
+
+        <a  href="/posts">Back</a>
+        <% if(isAuthenticated && post.author && currentUser.id == post.author.id){ %> <!-- 1 -->
+          <a href="/posts/<%= post._id %>/edit">Edit</a>
+          <form action="/posts/<%= post._id %>?_method=delete" method="post" >
+            <a  href="#" onclick="confirm('Do you want to delete this?')?this.parentElement.submit():null;">Delete</a>
+          </form> 
+        <% } %>
+
+  </body>
+</html>
