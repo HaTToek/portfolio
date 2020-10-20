@@ -5,7 +5,14 @@
     "express":"~4.17.1",
     "ejs":"~3.1.5" ,
     "body-parser": "~1.14.2",
-    "express-session": "~1.13.0"
+    "express-session": "~1.13.0",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.8.3",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
   },
 
   "description": "설명",
