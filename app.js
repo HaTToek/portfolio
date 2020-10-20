@@ -45,7 +45,7 @@ app.use('/', require('./routes/manager'));
 app.use('/posts', require('./routes/posts'));
 
 // Port setting
-const port = 3000;
+var port = server.listen(process.env.PORT || 3000);
 app.listen(port, function(){ 
     console.log('server on! http://localhost:'+port);
 });
