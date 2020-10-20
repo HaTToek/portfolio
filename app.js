@@ -12,7 +12,7 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);  
 mongoose.set('useCreateIndex', true);     
 mongoose.set('useUnifiedTopology', true);
-const url = "mongodb://localhost:27017/LeeHoYun";
+const url = "mongodb://localhost:27017/portfolio";
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection; 
 db.once('open', function(){
